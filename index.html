@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>정토사회문화회관 건축분과 발표</title>
+<style>
+  :root{ --bg:#14170f; --muted:#cfd3c4; --navh:46px; }
+  *{box-sizing:border-box;}
+  html, body{ height:100%; margin:0; overflow:hidden; background:var(--bg); }
+  body{
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR",sans-serif;
+  }
+  .nav{
+    position:fixed; top:0; left:0; right:0; height:var(--navh); z-index:10;
+    background:rgba(20,23,15,0.92); backdrop-filter:blur(6px);
+    padding:0 16px; display:flex; align-items:center; justify-content:space-between; gap:12px;
+  }
+  .nav .title{font-size:0.92rem; color:var(--muted);}
+  .nav .count{font-size:0.8rem; color:#9aa38c; white-space:nowrap;}
+
+  .scroller{
+    height:100%; overflow-y:auto; overflow-x:hidden;
+    scroll-snap-type:y mandatory; scroll-behavior:smooth;
+  }
+  .page{
+    height:100vh; width:100%;
+    display:flex; align-items:center; justify-content:center;
+    scroll-snap-align:start; scroll-snap-stop:always;
+    padding: calc(var(--navh) + 14px) 16px 14px;
+    background:var(--bg);
+    cursor:pointer;
+  }
+  .slide{
+    position:relative;
+    width:min(94vw, calc((100vh - var(--navh) - 28px) * 1.77778));
+    aspect-ratio: 1600 / 900;
+    border-radius:10px; overflow:hidden;
+    box-shadow:0 2px 14px rgba(0,0,0,0.45);
+    background:#000;
+  }
+  .slide img{display:block; width:100%; height:100%; object-fit:cover;}
+  .slide video{
+    position:absolute; display:block; border-radius:4px; background:#000;
+    box-shadow:0 0 0 2px rgba(255,255,255,0.08);
+    cursor:default;
+  }
+  .num{
+    position:absolute; left:8px; bottom:8px; background:rgba(0,0,0,0.55);
+    color:#fff; font-size:0.72rem; padding:2px 8px; border-radius:999px;
+  }
+  .hint{
+    position:fixed; right:16px; bottom:14px; z-index:10;
+    font-size:0.78rem; color:#9aa38c; background:rgba(20,23,15,0.8);
+    padding:4px 10px; border-radius:999px; pointer-events:none;
+    transition:opacity .4s;
+  }
+</style>
+</head>
+<body>
+<div class="nav">
+  <span class="title">정토사회문화회관 건축분과 — 7개 주제 발표</span>
+  <span class="count">총 20쪽 (동영상 5개 포함)</span>
+</div>
+
+<main class="scroller" id="scroller">
+
+<section class="page" data-n="1">
+  <div class="slide">
+    <img src="img/slide-01.png" alt="slide 1">
+    <span class="num">1 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="2">
+  <div class="slide">
+    <img src="img/slide-02.png" alt="slide 2">
+    <video controls playsinline preload="metadata" src="vid/v1.mp4"
+      style="left:14.36%; top:18.67%; width:71.25%; height:66.67%;"></video>
+    <span class="num">2 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="3">
+  <div class="slide">
+    <img src="img/slide-03.png" alt="slide 3">
+    <span class="num">3 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="4">
+  <div class="slide">
+    <img src="img/slide-04.png" alt="slide 4">
+    <span class="num">4 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="5">
+  <div class="slide">
+    <img src="img/slide-05.png" alt="slide 5">
+    <video controls playsinline preload="metadata" src="vid/v4.mp4"
+      style="left:14.36%; top:18.67%; width:71.25%; height:66.67%;"></video>
+    <span class="num">5 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="6">
+  <div class="slide">
+    <img src="img/slide-06.png" alt="slide 6">
+    <span class="num">6 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="7">
+  <div class="slide">
+    <img src="img/slide-07.png" alt="slide 7">
+    <span class="num">7 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="8">
+  <div class="slide">
+    <img src="img/slide-08.png" alt="slide 8">
+    <span class="num">8 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="9">
+  <div class="slide">
+    <img src="img/slide-09.png" alt="slide 9">
+    <span class="num">9 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="10">
+  <div class="slide">
+    <img src="img/slide-10.png" alt="slide 10">
+    <span class="num">10 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="11">
+  <div class="slide">
+    <img src="img/slide-11.png" alt="slide 11">
+    <span class="num">11 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="12">
+  <div class="slide">
+    <img src="img/slide-12.png" alt="slide 12">
+    <span class="num">12 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="13">
+  <div class="slide">
+    <img src="img/slide-13.png" alt="slide 13">
+    <video controls playsinline preload="metadata" src="vid/v12.mp4"
+      style="left:14.36%; top:18.67%; width:71.25%; height:66.67%;"></video>
+    <span class="num">13 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="14">
+  <div class="slide">
+    <img src="img/slide-14.png" alt="slide 14">
+    <span class="num">14 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="15">
+  <div class="slide">
+    <img src="img/slide-15.png" alt="slide 15">
+    <span class="num">15 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="16">
+  <div class="slide">
+    <img src="img/slide-16.png" alt="slide 16">
+    <video controls playsinline preload="metadata" src="vid/v15.mp4"
+      style="left:14.36%; top:18.67%; width:71.25%; height:66.67%;"></video>
+    <span class="num">16 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="17">
+  <div class="slide">
+    <img src="img/slide-17.png" alt="slide 17">
+    <span class="num">17 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="18">
+  <div class="slide">
+    <img src="img/slide-18.png" alt="slide 18">
+    <span class="num">18 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="19">
+  <div class="slide">
+    <img src="img/slide-19.png" alt="slide 19">
+    <video controls playsinline preload="metadata" src="vid/v18.mp4"
+      style="left:14.36%; top:18.67%; width:71.25%; height:66.67%;"></video>
+    <span class="num">19 / 20</span>
+  </div>
+</section>
+
+<section class="page" data-n="20">
+  <div class="slide">
+    <img src="img/slide-20.png" alt="slide 20">
+    <span class="num">20 / 20</span>
+  </div>
+</section>
+
+</main>
+
+<div class="hint" id="hint">화면을 클릭하면 다음 쪽으로 넘어갑니다</div>
+
+<script>
+(function(){
+  const scroller = document.getElementById('scroller');
+  const pages = Array.from(document.querySelectorAll('.page'));
+  const hint = document.getElementById('hint');
+
+  function currentIndex(){
+    let best = 0, bestDist = Infinity;
+    pages.forEach((p, i) => {
+      const d = Math.abs(p.getBoundingClientRect().top);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    return best;
+  }
+
+  function goTo(i){
+    if (i < 0 || i >= pages.length) return;
+    pages[i].scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  document.querySelectorAll('.page').forEach(page => {
+    page.addEventListener('click', (e) => {
+      if (e.target.closest('video')) return; // 영상 조작은 그대로 둠
+      const i = currentIndex();
+      goTo(i + 1 >= pages.length ? i : i + 1);
+    });
+  });
+
+  window.addEventListener('keydown', (e) => {
+    const i = currentIndex();
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') { goTo(i+1); e.preventDefault(); }
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { goTo(i-1); e.preventDefault(); }
+  });
+
+  let hid = false;
+  scroller.addEventListener('scroll', () => { if(!hid){ hint.style.opacity = '0'; hid = true; } }, {once:true});
+  setTimeout(() => { hint.style.opacity = '0'; }, 4000);
+})();
+</script>
+
+</body>
+</html>
